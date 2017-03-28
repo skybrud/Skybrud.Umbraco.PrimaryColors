@@ -1,0 +1,8 @@
+src/packages/
+src/Skybrud.Umbraco.PrimaryColors/bin/
+src/Skybrud.Umbraco.PrimaryColors/obj/
+*.suo
+*.user
+src/Skybrud.Umbraco.PrimaryColors/App_Data/NuGetBackup/
+node_modules/
+releases/temp/

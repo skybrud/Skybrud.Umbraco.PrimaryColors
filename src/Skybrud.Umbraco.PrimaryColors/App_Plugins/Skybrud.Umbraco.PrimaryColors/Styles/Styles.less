@@ -1,0 +1,61 @@
+﻿.SkybrudPrimaryColors {
+    
+    @sizeSmall: 48px;
+    @sizeLarge: @sizeSmall * 2;
+    
+    .colors {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    strong {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 11px;
+        color: #000;
+    }
+
+    .section + .section {
+        margin-top: 15px;
+    }
+    
+    .color {
+        display: block;
+        margin: 0 10px 10px 0;
+        width: @sizeSmall;
+        text-align: center;
+        opacity: 0.9;
+        &:hover, &.selected {
+            opacity: 1;
+        }
+        .colorbg {
+            width: @sizeSmall;
+            height: @sizeSmall;
+            line-height: @sizeSmall;
+            i {
+                color: white;
+                font-size: @sizeSmall / 2;
+            }
+        }
+        span {
+            font-weight: bold;
+            font-size: 10px;
+        }
+    }
+    
+    .colors.selected .color {
+        width: @sizeLarge;
+        .colorbg {
+            width: @sizeLarge;
+            height: @sizeLarge;
+            line-height: @sizeLarge;
+            i {
+                font-size: @sizeLarge / 2;
+            }
+        }
+        span {
+            font-size: 11px;
+        }
+    }
+
+}

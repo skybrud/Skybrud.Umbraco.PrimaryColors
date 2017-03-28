@@ -1,0 +1,52 @@
+﻿<div class="SkybrudPrimaryColors" ng-controller="Skybrud.PrimaryColors.Controller">
+
+    <div class="alert alert-info" ng-if="mostUsedColors.length == 0">
+        There has not yet been calculated any primary colors for this image.
+    </div>
+
+    <div class="section" ng-if="mostUsedColors.length > 0">
+        <div class="section">
+            <strong>Selected</strong>
+            <div class="colors selected">
+                <label class="color">
+                    <div class="colorbg" ng-style="{background: color}"></div>
+                    <span>
+                        {{color}}
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="section">
+            <strong>Primary colors</strong>
+            <div class="alert alert-info" ng-if="color && primaryColors.length == 0">
+                There could not be calculated any primary colors for this image. This will always be the case for
+                grayscale images, or images primary consisting of either very dark or very light colors.
+            </div>
+            <div class="colors primaryColors" ng-if="primaryColors.length > 0">
+                <label class="color" ng-repeat="item in primaryColors" ng-click="select(item)" ng-class="{selected: color == item}">
+                    <div class="colorbg" ng-style="{background: item}">
+                        <i class="icon-check large" ng-show="color == item"></i>
+                    </div>
+                    <span>
+                        {{item}}
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" ng-hide="hideMostUsedColors">
+        <strong>Most used colors</strong>
+        <div class="colors" ng-if="mostUsedColors.length > 0">
+            <label class="color" ng-repeat="item in mostUsedColors" ng-click="select(item)" ng-class="{selected: color == item}">
+                <div class="colorbg" ng-style="{background: item}">
+                    <i class="icon-check large" ng-show="color == item"></i>
+                </div>
+                <span>
+                    {{item}}
+                </span>
+            </label>
+        </div>
+    </div>
+
+</div>

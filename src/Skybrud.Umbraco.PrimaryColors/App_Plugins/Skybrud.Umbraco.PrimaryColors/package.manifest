@@ -1,0 +1,31 @@
+﻿{
+    "javascript": [
+        "~/App_Plugins/Skybrud.Umbraco.PrimaryColors/Controllers/PrimaryColors.js"
+    ],
+    "css": [
+        "~/App_Plugins/Skybrud.Umbraco.PrimaryColors/Styles/Styles.css"
+    ],
+    "propertyEditors": [
+		{
+            "alias": "Skybrud.PrimaryColors",
+            "name": "Skybrud - Primary Colors",
+            "icon": "icon-colorpicker",
+            "group": "Skybrud.dk",
+            "editor": {
+                "view": "~/App_Plugins/Skybrud.Umbraco.PrimaryColors/Views/PrimaryColors.html",
+                "hideLabel": false,
+                "valueType": "TEXT"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Hide most used colors",
+                        "description": "Hide the option to select a color from the <strong>Most used colors</strong> list.",
+                        "key": "hideMostUsedColors",
+                        "view": "boolean"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Skybrud.Umbraco.PrimaryColors",
+  "description": "Property editor for Umbraco 7+ showing and managing primary colors of uploaded images.",
+  "company": "Skybrud.dk",
+  "product": "Skybrud.Umbraco.PrimaryColors",
+  "copyright": "Copyright © 2017",
+  "version": "1.0.0.0",
+  "informationalVersion": "1.0.0",
+  "fileVersion": "1.0.0.0"
+}

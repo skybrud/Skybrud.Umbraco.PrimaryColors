@@ -1,0 +1,21 @@
+{
+    "name": "Skybrud.Umbraco.PrimaryColors",
+    "url": "https://github.com/skybrud/Skybrud.Umbraco.PrimaryColors",
+    "license": {
+        "name": "MIT",
+        "url": "https://github.com/skybrud/Skybrud.Umbraco.PrimaryColors/blob/master/LICENSE.md"
+    },
+    "author": {
+        "name": "Skybrud.dk",
+        "url": "http://www.skybrud.dk/"
+    },
+    "readme": "Property editor for Umbraco 7+ showing and managing primary colors of uploaded media.",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-nuget": "0.1.6",
+        "grunt-zip": "~0.17.0",
+        "grunt-umbraco-package": "1.0.0",
+        "grunt-contrib-clean": "^0.7.0"
+    }
+}
